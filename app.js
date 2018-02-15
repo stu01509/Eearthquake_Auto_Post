@@ -16,7 +16,7 @@ const earthquake = function () {
     const result = []; // Save all result
     const urls =[]; // Save url to check file exist 
     const table_tr = $(".BoxTable tr"); 
-    for (let i = 1; i < 15; i++) { 
+    for (let i = 0; i < 15; i++) { 
       const table_td = table_tr.eq(i).find('td'); 
       const time = table_td.eq(1).text(); // time (台灣時間)
       const latitude = table_td.eq(2).text(); // latitude (緯度)
@@ -34,7 +34,7 @@ const earthquake = function () {
     console.log('\x1b[42m','爬蟲執行完成!');
 
     // Check file exist 
-    for(j=1;j<urls.length;j++){
+    for(j=0;j<urls.length;j++){
       if(fs.existsSync(__dirname+'Data/'+urls[j].url+".json")){
         console.log(urls.length+"個.json跳過囉!");
       }else{
@@ -65,4 +65,4 @@ const earthquake = function () {
 
 earthquake();
 // 每15分爬一次資料
-setInterval(earthquake,15 * 60 * 1000);
+setInterval(earthquake,3 * 60 * 1000);
