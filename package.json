@@ -2,7 +2,7 @@
   "name": "eq",
   "version": "1.0.0",
   "description": "Eearthquake Auto Post to Facebook",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fbgraph": "^1.4.1",
@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start":  "node app.js",
+    "start":  "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cliff Su",
