@@ -35,10 +35,10 @@ const earthquake = function () {
 
     // Check file exist 
     for(j=0;j<urls.length;j++){
-      if(fs.existsSync(__dirname+'Data/'+urls[j].url+".json")){
+      if(fs.existsSync('Data/'+urls[j].url+".json")){
         console.log(urls.length+"個.json跳過囉!");
       }else{
-        fs.writeFile(__dirname+'Data/'+urls[j].url+".json", JSON.stringify(result[j])); // Write file and save a json file
+        fs.writeFile('Data/'+urls[j].url+".json", JSON.stringify(result[j])); // Write file and save a json file
         //4/15到期
         let Post = '🕔時間:'+result[j].time + '\r\n\r\n '+'🎯規模:'+result[j].amgnitude +'  ⚠深度:'+result[j].depth+' 公里'+ '\r\n\r\n '+'🇹🇼位置:'+result[j].location+ '\r\n\r\n '+'🌐緯度:'+result[j].latitude+ '\r\n\r\n '+'🌐經度:'+result[j].longitude+ '\r\n\r\n '+'http://www.cwb.gov.tw/V7/earthquake/Data/local/'+result[j].url ;
     
