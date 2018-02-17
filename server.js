@@ -50,7 +50,7 @@ const earthquake = function () {
       if (fs.existsSync('Data/' + urls[j].url + ".json")) {} else {
         fs.writeFile('Data/' + urls[j].url + ".json", JSON.stringify(result[j])); // Write file and save a json file
         //4/15到期
-        let Post = '🕔時間:' + result[j].time + '\r\n\r\n ' + '🎯規模:' + result[j].amgnitude + '  ⚠深度:' + result[j].depth + ' 公里' + '\r\n\r\n ' + '🇹🇼位置:' + result[j].location + '\r\n\r\n ' + '🌐緯度:' + result[j].latitude + '\r\n\r\n ' + '🌐經度:' + result[j].longitude;
+        let Post = '震！來了-地震資訊 ?' + '\r\n\r\n ' + '🕔時間:' + result[j].time + '\r\n\r\n ' + '🎯規模:' + result[j].amgnitude + '  ⚠深度:' + result[j].depth + ' 公里' + '\r\n\r\n ' + '🇹🇼位置:' + result[j].location + '\r\n\r\n ' + '🌐緯度:' + result[j].latitude + '\r\n\r\n ' + '🌐經度:' + result[j].longitude;
         // 小區域地震
         let wallPost_local = {
           message: Post,
