@@ -62,7 +62,7 @@ const earthquake = function () {
           url: result[j].pic_quake
         };
 
-        graph.setAccessToken('EAAPSuFQJhfYBAAfkX39V2RiqqApSGBp3yQeZBaXsU76q82fdmOkmYkRBjB004RcX4QVQuums5E3cZARHfbDQEutYbQh06fdGGzi0iPgfZCJTujNZCSwPMkPVvooVJZCGbCkP8v5CsbYN8hZBR4fZCHhxABVPxw9ZBvuz3mhV0cSaY9gWeHUo0nxI');
+        graph.setAccessToken('EAAPSuFQJhfYBAEgh9cNbh2VB9m7aAS44YfprMmMYe9ZAHHz7bn36z3Qy3eS8q3WXruTf7F5moazl9OkknHZAHcXAZAYZCaWiCCJ0bs2590KHRfZAWcJ0Pv41uP9Krtz7NOjMQ1siyzZBrvuDwxxlbfPIyXVYDaNLlrGHXuHDSwZCwZDZD');
         // 小區域地震
         graph.post("/me/photos", wallPost_local, function (err, res) {
           console.log(res);
